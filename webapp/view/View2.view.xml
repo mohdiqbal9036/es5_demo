@@ -1,0 +1,51 @@
+<mvc:View controllerName="sap.m.es5.es5_demo_projectV2.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout">
+	<Page id="page2" title="{i18n>headertitle}" showNavButton="true" navButtonPress="onClickBackbtn">
+		<content>
+			<l:Grid class="sapUiTinyMarginTop sapUiTinyMarginBegin" defaultSpan="L12 M12 S12" hSpacing="0">
+				<l:content>
+					<Label text="Product ID">
+						<layoutData>
+							<l:GridData span="L1 M2 S12"/>
+						</layoutData>
+					</Label>
+					<Text text="{productDetailModel>/ProductID}">
+						<layoutData>
+							<l:GridData span="L2 M2 S12"/>
+						</layoutData>
+					</Text>
+					<Label text="Product Name">
+						<layoutData>
+							<l:GridData span="L1 M2 S12"/>
+						</layoutData>
+					</Label>
+					<Text text="{productDetailModel>/Name}">
+						<layoutData>
+							<l:GridData span="L2 M2 S12"/>
+						</layoutData>
+					</Text>
+					<Label text="Price">
+						<layoutData>
+							<l:GridData span="L1 M2 S12" linebreak="true"/>
+						</layoutData>
+					</Label>
+					<Text text="{productDetailModel>/Price}">
+						<layoutData>
+							<l:GridData span="L2 M2 S12"/>
+						</layoutData>
+					</Text>
+					<Label text="Supplier">
+						<layoutData>
+							<l:GridData span="L1 M2 S12"/>
+						</layoutData>
+					</Label>
+					<Text text="{productDetailModel>/SupplierName}">
+						<layoutData>
+							<l:GridData span="L2 M2 S12"/>
+						</layoutData>
+					</Text>
+				</l:content>
+			</l:Grid>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,33 @@
+<mvc:View controllerName="sap.m.es5.es5_demo_projectV2.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page id="page" title="{i18n>title}">
+		<content>
+			<Table class="tbTable" mode="SingleSelectMaster" selectionChange="onHandleSelect" items="{/results}" fixedLayout="true" sticky="ColumnHeaders"
+				showSeparators="All" growing="true" growingScrollToLoad="true">
+				<columns>
+					<Column>
+						<Label design="Bold" text="ProductID"/>
+					</Column>
+					<Column>
+						<Label design="Bold" text="Name"/>
+					</Column>
+					<Column>
+						<Label design="Bold" text="Price"/>
+					</Column>
+					<Column>
+						<Label design="Bold" text="Supplier Name"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{ProductID}"/>
+							<Text text="{Name}"/>
+							<Text text="{Price}"/>
+							<Text text="{SupplierName}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>
